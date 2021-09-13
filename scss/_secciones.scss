@@ -1,0 +1,43 @@
+.generalSecciones{
+    
+    padding-left: 3rem;
+
+    .generalSecciones__titulos {
+    
+        color:slategrey!important;
+        font-size: 3rem!important;
+        font-family: 'Bebas Neue', cursive!important;
+        
+        }
+        
+    }
+    
+    
+    footer{
+    
+    padding: 1rem;
+    
+    }
+
+
+
+    /* MEDIA QUERIES */
+
+    @media (max-width:768px) {
+
+        
+        .generalSecciones{
+
+            .generalSecciones__titulos  {
+            
+            color:slategrey!important;
+            font-size: 1.5rem!important;
+            font-family: 'Bebas Neue', cursive!important;
+            
+            }
+
+
+
+    }   
+    
+}

@@ -31,13 +31,13 @@
          <div class="row">
             <div class="col-1">
 
-               <img src="./Imagenes/Telecom1.png" alt="Logo Telecom" class="img-fluid img-thumbnail">
+               <img src="./Imagenes/Telecom1.png" alt="Logo Telecom" class="img-fluid img-thumbnail w-100">
 
             </div>
 
             <div class="d-inline-flex col-1">
 
-               <img src="./Imagenes/mantenimiento-preventivo.png" alt="MP" class="img-fluid img-thumbnail">
+               <img src="./Imagenes/mantenimiento-preventivo.png" alt="MP" class="img-fluid img-thumbnail w-100">
 
             </div>
          </div>
@@ -110,105 +110,230 @@
 
          <h2 class="generalSecciones__titulos">Tablero General</h2>
 
+                    <!-- Contenido Row -->
 
-         <div class=" row container-fluid">
-            <div class="col-md-4">
-               <select class="form-select" aria-label="Default select example">
-                  <option selected>Seleccion de Grafica</option>
-                  <option value="cronogramaDeTareas">Cronograma</option>
-                  <option value="operacionesRegionales">Operacion Regional</option>
-                  <option value="presupuestoMp">Presupuesto</option>
-                  <option value="edificiosDeRed">Edificios de Red</option>>
-               </select>
+                    <div class="row col-8">
 
-               <img src="https://via.placeholder.com/400" alt="">
-            </div>
+                     <!-- Area Graficos -->
+                     <div class="col-xl-8 col-lg-7">
+                         <div class="card shadow mb-4">
+                             <!-- CABECERA CARD -->
+                             <div
+                                 class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                 <h6 class="m-0 font-weight-bold text-primary">TABLERO - 1</h6>
+                                 <div class="dropdown no-arrow">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Seleccion de Grafica</option>
+                                        <option value="cronogramaDeTareas">Cronograma</option>
+                                        <option value="operacionesRegionales">Operacion Regional</option>
+                                        <option value="presupuestoMp">Presupuesto</option>
+                                        <option value="edificiosDeRed">Edificios de Red</option>>
+                                     </select>   
+                                     
+                                 </div>
+                             </div>
+                             <!-- GRAFICO CARD -->
+                             <div class="card-body">
+                                 <div class="chart-area">
+                                    <img src="./Imagenes/Grafico 1.png"  class="img-fluid img-thumbnail" alt="">
+                                     <canvas id="myAreaChart"></canvas>
+                                 </div>
+                             </div>
 
+                             
 
-         </div>
-         <div class=" row container-fluid">
-            <div class="col-md-4">
-               <select class="form-select" aria-label="Default select example">
-                  <option selected>Seleccion de Grafica</option>
-                  <option value="cronogramaDeTareas">Cronograma</option>
-                  <option value="operacionesRegionales">Operacion Regional</option>
-                  <option value="presupuestoMp">Presupuesto</option>
-                  <option value="edificiosDeRed">Edificios de Red</option>>
-               </select>
+                         </div>
+                     </div>
+                     <!-- Contenido Columna -->
+                     <div class="col-lg-4 mb-4">
+                     <!-- AVANCE DE TAREAS-->
+                     <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">AVANCE POR REGION TABLERO - 1</h6>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="small font-weight-bold">AMBA<span
+                                    class="float-right"> 20%</span></h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                                    aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="small font-weight-bold">MEDITERRANEA <span
+                                    class="float-right">40%</span></h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
+                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="small font-weight-bold">NOA <span
+                                    class="float-right">60%</span></h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" style="width: 60%"
+                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="small font-weight-bold">LITORAL <span
+                                    class="float-right">80%</span></h4>
+                            <div class="progress mb-4">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h4 class="small font-weight-bold">PBA Y PATAGONIA <span
+                                    class="float-right">Complete!</span></h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
 
-               <img src="https://via.placeholder.com/400" alt="">
-            </div>
+                </div>
+                    </div>
+                
+                        <!-- Contenido Row -->
 
+                        <div class="row col-8">
 
-         </div>
-         <div class=" row container-fluid">
-            <div class="col-md-4">
-               <select class="form-select" aria-label="Default select example">
-                  <option selected>Seleccion de Grafica</option>
-                  <option value="cronogramaDeTareas">Cronograma</option>
-                  <option value="operacionesRegionales">Operacion Regional</option>
-                  <option value="presupuestoMp">Presupuesto</option>
-                  <option value="edificiosDeRed">Edificios de Red</option>>
-               </select>
-
-               <img src="https://via.placeholder.com/400" alt="">
-            </div>
-
-
-         </div>
-         <div class=" row container-fluid">
-            <div class="col-md-4">
-               <select class="form-select" aria-label="Default select example">
-                  <option selected>Seleccion de Grafica</option>
-                  <option value="cronogramaDeTareas">Cronograma</option>
-                  <option value="operacionesRegionales">Operacion Regional</option>
-                  <option value="presupuestoMp">Presupuesto</option>
-                  <option value="edificiosDeRed">Edificios de Red</option>>
-               </select>
-
-               <img src="https://via.placeholder.com/400" alt="">
-            </div>
-
-
-         </div>
-
+                            <!-- Area Graficos -->
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="card shadow mb-4">
+                                    <!-- CABECERA CARD -->
+                                    <div
+                                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                        <h6 class="m-0 font-weight-bold text-primary">TABLERO - 2</h6>
+                                        <div class="dropdown no-arrow">
+                                           <select class="form-select" aria-label="Default select example">
+                                               <option selected>Seleccion de Grafica</option>
+                                               <option value="cronogramaDeTareas">Cronograma</option>
+                                               <option value="operacionesRegionales">Operacion Regional</option>
+                                               <option value="presupuestoMp">Presupuesto</option>
+                                               <option value="edificiosDeRed">Edificios de Red</option>>
+                                            </select>   
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- GRAFICO CARD -->
+                                    <div class="card-body">
+                                        <div class="chart-area">
+                                            <img src="./Imagenes/Grafico 2.png"  class="img-fluid img-thumbnail w-100" alt="">
+                                            <canvas id="myAreaChart"></canvas>
+                                        </div>
+                                    </div>
+       
+                                    
+       
+                                </div>
+                            </div>
+                            <!-- Contenido Columna -->
+                            <div class="col-lg-4 mb-4">
+                            <!-- AVANCE DE TAREAS-->
+                            <div class="card shadow mb-4">
+                               <div class="card-header py-3">
+                                   <h6 class="m-0 font-weight-bold text-primary">AVANCE POR REGION TABLERO - 2</h6>
+                               </div>
+                               <div class="card-body">
+                                   <h4 class="small font-weight-bold">AMBA<span
+                                           class="float-right"> 20%</span></h4>
+                                   <div class="progress mb-4">
+                                       <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                                           aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                   </div>
+                                   <h4 class="small font-weight-bold">MEDITERRANEA <span
+                                           class="float-right">40%</span></h4>
+                                   <div class="progress mb-4">
+                                       <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
+                                           aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                   </div>
+                                   <h4 class="small font-weight-bold">NOA <span
+                                           class="float-right">60%</span></h4>
+                                   <div class="progress mb-4">
+                                       <div class="progress-bar" role="progressbar" style="width: 60%"
+                                           aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                   </div>
+                                   <h4 class="small font-weight-bold">LITORAL <span
+                                           class="float-right">80%</span></h4>
+                                   <div class="progress mb-4">
+                                       <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
+                                           aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                   </div>
+                                   <h4 class="small font-weight-bold">PBA Y PATAGONIA <span
+                                           class="float-right">Complete!</span></h4>
+                                   <div class="progress">
+                                       <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                           aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                   </div>
+                               </div>
+                           </div>
+       
+                       </div>
+                           </div>               
+        
       </section>
-      <section class="generalSecciones__consultas">
-         <form>
+      
+      <section class="generalSecciones d-inline-flex">
 
-            <div class="row">
-               <div class="col-2 d-inline-flex">
-
-                  <img src="./Imagenes/Consultas.png" alt="Consultas" class="img-fluid img-thumbnail">
-
+         <div>
+            <form>
+   
+               <div class="row">
+                  <div class="col-2 d-inline-flex mt-4">
+   
+                     <img src="./Imagenes/Consultas.png" alt="Consultas" class="img-fluid img-thumbnail">
+   
+                  </div>
                </div>
-            </div>
-
-            <h2 class="generalSecciones__titulos">CONSULTAS</h2>
-
+   
+               <h2 class="generalSecciones__titulos">CONSULTAS</h2>
+   
             <form class="row g-3">
-               <div class="col-md-6">
-                  <label for="inputEmail" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail">
+           <!-- Card Email Region -->
+           <div class="col-xl-3 col-md-6 mb-5 d-inline-flex">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                 <label for="inputEmail" class="form-label">Email</label>
+                                 <input type="email" class="form-control" id="inputEmail">
+                              </div>
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                              <label for="inputRegion" class="form-label">Region</label>
+                              <input type="text" class="form-control" id="inputRegion"
+                                 placeholder="AMBA MEDITERRANEA NOA LITORAL PBAyPATAGONIA">
+                           </div>
+                        <div class="col-auto">
+                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <!-- Card Operacion Tecnologia -->
+ <div class="col-xl-3 col-md-6 mb-5 d-inline-flex">
+   <div class="card border-left-primary shadow h-100 py-2">
+       <div class="card-body">
+           <div class="row no-gutters align-items-center">
+                   <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                     <label for="inputOperacionRegional" class="form-label">Operacion Regional</label>
+                     <input type="text" class="form-control" id="inputOperacionRegional"
+                        placeholder="PLANTA INTERNA REGION OPERATIVA">
+                     </div>
+                   <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                     <label for="inputTecnologia" class="form-label">Tecnologia</label>
+                     <input type="text" class="form-control" id="inputTecnologia"
+                        placeholder="ENTORNO PLATAFORMAS ACCESO MOVIL">
+                  </div>
+               <div class="col-auto">
+                   <i class="fas fa-calendar fa-2x text-gray-300"></i>
                </div>
-               <div class="col-md-6">
-                  <label for="inputRegion" class="form-label">Region</label>
-                  <input type="text" class="form-control" id="inputRegion"
-                     placeholder="AMBA MEDITERRANEA NOA LITORAL PBAyPATAGONIA">
-               </div>
-               <div class="col-md-6">
-                  <label for="inputOperacionRegional" class="form-label">Operacion Regional</label>
-                  <input type="text" class="form-control" id="inputOperacionRegional"
-                     placeholder="PLANTA INTERNA REGION OPERATIVA">
-               </div>
-               <div class="col-md-6">
-                  <label for="inputTecnologia" class="form-label">Tecnologia</label>
-                  <input type="text" class="form-control" id="inputTecnologia"
-                     placeholder="ENTORNO PLATAFORMAS ACCESO MOVIL">
-               </div>
-
-               <div class="col-md-4">
-                  <label for="inputProblema" class="form-label">Tipo de Problema</label>
+           </div>
+       </div>
+   </div>
+</div>
+        <!-- Card Detalle del problema -->
+ <div class="col-xl-3 col-md-6 mb-5 d-inline-flex">
+   <div class="card border-left-primary shadow h-100 py-2">
+       <div class="card-body">
+           <div class="row no-gutters align-items-center">
+                   <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                     <label for="inputProblema" class="form-label">Tipo de Problema</label>
                   <select id="inputProblema" class="form-select">
                      <option selected>Seleccionar ...</option>
                      <option>Herramientas de Gestion</option>
@@ -216,24 +341,37 @@
                      <option>Problemas Tecnicos</option>
                      <option>Otros</option>
                   </select>
-               </div>
-               <div class="col-md-8">
-                  <label for="inputDetalle" class="form-label">Detalle del problema</label>
+                     </div>
+                   <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                     <label for="inputDetalle" class="form-label">Detalle del problema</label>
                   <input type="text" class="form-control" id="inputDetalle">
+                  </div>
+               <div class="col-auto">
+                   <i class="fas fa-calendar fa-2x text-gray-300"></i>
                </div>
-               <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Enviar</button>
+           </div>
+       </div>
+   </div>
+</div>
+
+             <!-- Boton de Envio -->        
+             
+               <div class="col-12 d-inline-flex">
+                  <button type="submit" class="btn btn-outline-success">Enviar</button>
                </div>
             </form>
 
+         </div>
+
       </section>
 
-      <footer>
-
-         <!--  se rellena con datos de contacto -->
-
-
-      </footer>
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright &copy; NICOLGONZALEZ</span>
+            </div>
+        </div>
+    </footer>
 
    </main>
 

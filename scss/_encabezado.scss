@@ -1,0 +1,135 @@
+.encabezado {
+    
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin: 1rem;
+    
+    .encabezado__titulos {
+    
+        color:whitesmoke;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        letter-spacing: normal;
+        word-spacing: 0.5rem;
+        -webkit-text-stroke:darkseagreen 0.1rem;
+        
+        }
+
+        .encabezado__nav{
+
+
+        .nav__link{
+            color:wheat!important;
+            font-style: normal; 
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none!important;
+
+        }
+
+        .nav__item{
+
+            &:hover{
+
+                background-color: darkgrey!important;
+
+            }
+
+
+         } 
+
+        .nav__listaDos{
+        
+            display:none!important;
+            
+            }
+        .nav__ubicacionListaUno{
+    
+                padding-left: 10rem!important;
+                
+                }
+
+
+               
+
+            }
+
+
+    
+    }
+
+
+    /*SASS OPERACIONES*/
+
+   $letrasTamaños: 15px,5rem;
+
+   @each $tamañoLetra in $letrasTamaños {
+
+    .font-#{$tamañoLetra} {
+
+        font-size: $tamañoLetra;
+    }
+
+       
+   } 
+
+    $grosorDeLetras: (
+    grosorTitulos:900,
+    grosorLink:600,
+    );
+
+    @each $grosor,$valor in $grosorDeLetras {
+
+      .grosores-#{$grosor} {
+
+        font-weight: $valor!important; 
+
+      }  
+    
+    }
+
+
+    
+    /* MEDIA QUERIES */
+
+    @media (max-width:768px) {
+    
+
+        .encabezado{
+
+            .encabezado__titulos {
+    
+                color:whitesmoke;
+                font-size: 2.5rem!important;
+                font-weight:700!important;
+                font-family: 'Bebas Neue', cursive;
+                text-align: center;
+                letter-spacing: normal;
+                word-spacing: 0.5rem;
+                -webkit-text-stroke:darkseagreen 0.1rem;
+                
+                }
+
+                .encabezado__nav{
+
+
+                    .nav__listaDos{
+    
+                    display: block!important;
+                    
+                    }
+                    
+                    .nav__ubicacionListaUno{
+                    
+                    display:none!important;
+                    
+                    }
+                    
+                }
+
+                }
+
+
+
+
+    }   
+    
