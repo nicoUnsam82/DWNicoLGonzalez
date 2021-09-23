@@ -9,8 +9,40 @@
         font-family: 'Bebas Neue', cursive!important;
         
         }
-        
+
+    .generalSecciones__tarjeta{
+
+       
+
+    .generalSecciones__tarjetaUno {
+        display:block!important;  
+
+    }    
+    .generalSecciones__tarjetaDos {
+        display:none!important;  
+
+    }    
+    
+            } 
+
+            .generalSecciones__tarjeta:hover{
+                
+                .generalSecciones__tarjetaUno {
+                    display:none!important;  
+            
+                }    
+                .generalSecciones__tarjetaDos {
+                    display:block!important;
+                      
+            
+                }    
+
+
+            }        
+
     }
+
+
     
     
     footer{

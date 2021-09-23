@@ -3,8 +3,8 @@
   padding: 0; }
 
 html {
-  font-size: 74.5%;
-  background-size: 74.5%; }
+  font-size: 80.5%;
+  background-size: 80.5%; }
 
 .encabezado {
   padding-top: 1rem;
@@ -64,6 +64,14 @@ html {
     color: slategrey !important;
     font-size: 3rem !important;
     font-family: "Bebas Neue", cursive !important; }
+  .generalSecciones .generalSecciones__tarjeta .generalSecciones__tarjetaUno {
+    display: block !important; }
+  .generalSecciones .generalSecciones__tarjeta .generalSecciones__tarjetaDos {
+    display: none !important; }
+  .generalSecciones .generalSecciones__tarjeta:hover .generalSecciones__tarjetaUno {
+    display: none !important; }
+  .generalSecciones .generalSecciones__tarjeta:hover .generalSecciones__tarjetaDos {
+    display: block !important; }
 
 footer {
   padding: 1rem; }
