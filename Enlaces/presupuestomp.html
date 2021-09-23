@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sitio de indicadores de mantenimiento preventivo">
+  <meta name="description" content="Sitio del avance del presupuesto por region">
    <meta name="keywords" content="Mantenimiento,Operaciones,Energia,Rutinas">
+   <link rel="shortcut icon" href="../Imagenes/telecom-2.png">
   <title> MPI - PI y Sitios Moviles - Presupuesto </title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,16 +27,16 @@
          <li class="breadcrumb-item active" aria-current="page">PresupuestoMp</li>
       </ol>
     </nav>
-   <div>
+   <div class="container-fluid">
 
       <div class="row">
-         <div class="col-1">
+         <div class="d-inline-flex col-md-2 col-sm-3 col-3">
 
             <img src="../Imagenes/Telecom1.png" alt="Logo Telecom" class="img-fluid img-thumbnail">
 
          </div>
 
-         <div class="d-inline-flex col-1">
+         <div class="d-inline-flex col-md-2 col-sm-3 col-3">
 
             <img src="../Imagenes/Presupuesto.png" alt="Presupuesto"class="img-fluid img-thumbnail">
 
@@ -91,20 +92,22 @@
 
      <main>
       <section class="generalSecciones">
+
+      <div class="container"> 
       <h2 class="generalSecciones__titulos">TABLERO DE PRESUPUESTO DE MP</h2> 
-      
+      <p class="blockquote">Seleccione en los tableros, los avances de presupuesto asignado, segun region/tecnologia</p>
       <!-- Contenido Row -->
       
-      <div class="row col-8">
+      <div class="row col-12">
       
          <!-- Area Graficos -->
-         <div class="col-xl-7 col-lg-6">
+         <div class="col-xl-9 col-lg-7">
              <div class="card shadow mb-4">
                  <!-- CABECERA CARD -->
                  <div
                      class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                      <h6 class="m-0 font-weight-bold text-primary">TABLERO - 1</h6>
-                     <div class="dropdown no-arrow">
+                     <div class="dropdown no-arrow d-inline-flex">
                         <select class="form-select" aria-label="Default select example">
                            <option selected>Seleccion de Grafica</option>
                            <option value="amba">AMBA</option>
@@ -113,14 +116,25 @@
                            <option value="noa">NOA</option>
                            <option value="litoral">LITORAL</option>
                         </select>
-                         
+                        <div class="nav__listaDos btn-group">
+                            <!--BOTON DE TRES PUNTOS-->   
+                         <button type="button" class="btn"  data-bs-toggle="dropdown" aria-expanded="false">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                             <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
+                                 </svg>
+                                     </button>
+                             <ul class="dropdown-menu">
+                                <li class="btn"><a class="dropdown-item" href="#">Generar Reporte</a></li>
+                               <li class="btn"><a class="dropdown-item" href="#">Descargar Base de Datos</a></li>
+                             </ul>
+                           </div>       
                      </div>
                  </div>
                  <!-- GRAFICO CARD -->
                  <div class="card-body">
                      <div class="chart-area">
-                        <img src="../Imagenes/Grafico 4.png"  class="img-fluid img-thumbnail w-100" alt="">
-                         <canvas id="myAreaChart"></canvas>
+                        <img src="../Imagenes/grafico-4.png"  class="img-fluid img-thumbnail w-100" alt="graficoIndicadoresEjemplo">
+                         <!-- <canvas id="myAreaChart"></canvas> -->
                      </div>
                  </div>
       
@@ -129,29 +143,41 @@
              </div>
          </div>
          <!-- Contenido Columna -->
-         <div class="col-lg-5 mb-4">
+         <div class="col-lg-3 mb-4">
          <!-- AVANCE DE TAREAS-->
          <div class="card shadow mb-4">
-            <div class="card-header py-3">
+            <div class="card-header py-3 d-inline-flex">
                 <h6 class="m-0 font-weight-bold text-primary">AVANCE POR REGION TABLERO - 1</h6>
+                <div class="nav__listaDos btn-group">
+                    <!--BOTON DE TRES PUNTOS-->   
+                 <button type="button" class="btn"  data-bs-toggle="dropdown" aria-expanded="false">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                     <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
+                         </svg>
+                             </button>
+                     <ul class="dropdown-menu">
+                        <li class="btn"><a class="dropdown-item" href="#">Generar Reporte</a></li>
+                       <li class="btn"><a class="dropdown-item" href="#">Descargar Base de Datos</a></li>
+                     </ul>
+                   </div>     
             </div>
             <div class="card-body">
                 <h4 class="small font-weight-bold">PI ENTORNO GRAL <span
                         class="float-right">20%</span></h4>
                 <div class="progress mb-4">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 20%"
                         aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <h4 class="small font-weight-bold">PLATAFORMA <span
                         class="float-right">40%</span></h4>
                 <div class="progress mb-4">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 40%"
                         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <h4 class="small font-weight-bold">ACCESO MOVIL <span
                         class="float-right">60%</span></h4>
                 <div class="progress mb-4">
-                    <div class="progress-bar" role="progressbar" style="width: 60%"
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 60%"
                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <h4 class="small font-weight-bold">PI ENTORNO CLIMATIZACION <span
@@ -161,9 +187,9 @@
                         aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <h4 class="small font-weight-bold">PI ENTORNO GE <span
-                        class="float-right">Complete!</span></h4>
+                        class="float-right">100%</span></h4>
                 <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 100%"
                         aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
@@ -171,19 +197,20 @@
       
       </div>
         </div>
-      
+    </div> 
+        <div class="container"> 
             <!-- Contenido Row -->
       
-            <div class="row col-8">
+            <div class="row col-12">
       
                 <!-- Area Graficos -->
-                <div class="col-xl-7 col-lg-6">
+                <div class="col-xl-9 col-lg-7">
                     <div class="card shadow mb-4">
                         <!-- CABECERA CARD -->
                         <div
                             class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                             <h6 class="m-0 font-weight-bold text-primary">TABLERO - 2</h6>
-                            <div class="dropdown no-arrow">
+                            <div class="dropdown no-arrow d-inline-flex">
                               <select class="form-select" aria-label="Default select example">
                                  <option selected>Seleccion de Grafica</option>
                                  <option value="amba">AMBA</option>
@@ -192,14 +219,25 @@
                                  <option value="noa">NOA</option>
                                  <option value="litoral">LITORAL</option>
                               </select>
-                                
+                              <div class="nav__listaDos btn-group">
+                                <!--BOTON DE TRES PUNTOS-->   
+                             <button type="button" class="btn"  data-bs-toggle="dropdown" aria-expanded="false">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                 <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
+                                     </svg>
+                                         </button>
+                                 <ul class="dropdown-menu">
+                                    <li class="btn"><a class="dropdown-item" href="#">Generar Reporte</a></li>
+                                   <li class="btn"><a class="dropdown-item" href="#">Descargar Base de Datos</a></li>
+                                 </ul>
+                               </div>        
                             </div>
                         </div>
                         <!-- GRAFICO CARD -->
                         <div class="card-body">
                             <div class="chart-area">
-                              <img src="../Imagenes/Grafico 3.png"  class="img-fluid img-thumbnail w-100" alt="">
-                                <canvas id="myAreaChart"></canvas>
+                              <img src="../Imagenes/grafico-3.png"  class="img-fluid img-thumbnail w-100" alt="graficoIndicadoresEjemplo">
+                                <!-- <canvas id="myAreaChart"></canvas> -->
                             </div>
                         </div>
       
@@ -208,29 +246,41 @@
                     </div>
                 </div>
                 <!-- Contenido Columna -->
-                <div class="col-lg-5 mb-4">
+                <div class="col-lg-3 mb-4">
                 <!-- AVANCE DE TAREAS-->
                 <div class="card shadow mb-4">
-                   <div class="card-header py-3">
+                   <div class="card-header py-3 d-inline-flex">
                        <h6 class="m-0 font-weight-bold text-primary">AVANCE POR REGION TABLERO - 2</h6>
+                       <div class="nav__listaDos btn-group">
+                        <!--BOTON DE TRES PUNTOS-->   
+                     <button type="button" class="btn"  data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                         <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
+                             </svg>
+                                 </button>
+                         <ul class="dropdown-menu">
+                            <li class="btn"><a class="dropdown-item" href="#">Generar Reporte</a></li>
+                           <li class="btn"><a class="dropdown-item" href="#">Descargar Base de Datos</a></li>
+                         </ul>
+                       </div>     
                    </div>
                    <div class="card-body">
                        <h4 class="small font-weight-bold">PI ENTORNO GRAL<span
                                class="float-right"> 20%</span></h4>
                        <div class="progress mb-4">
-                           <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                           <div class="progress-bar bg-info" role="progressbar" style="width: 20%"
                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                        </div>
                        <h4 class="small font-weight-bold">PLATAFORMAS <span
                                class="float-right">40%</span></h4>
                        <div class="progress mb-4">
-                           <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
+                           <div class="progress-bar bg-info" role="progressbar" style="width: 40%"
                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                        </div>
                        <h4 class="small font-weight-bold">ACCESO MOVIL <span
                                class="float-right">60%</span></h4>
                        <div class="progress mb-4">
-                           <div class="progress-bar" role="progressbar" style="width: 60%"
+                           <div class="progress-bar bg-info" role="progressbar" style="width: 60%"
                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                        </div>
                        <h4 class="small font-weight-bold">PI ENTORNO CLIMATIZACION <span
@@ -240,9 +290,9 @@
                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                        </div>
                        <h4 class="small font-weight-bold">PI ENTORNO GE <span
-                               class="float-right">Complete!</span></h4>
+                               class="float-right">100%</span></h4>
                        <div class="progress">
-                           <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                           <div class="progress-bar bg-info" role="progressbar" style="width: 100%"
                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                        </div>
                    </div>
@@ -250,14 +300,14 @@
       
            </div>
                </div>               
-      
+            </div>
       </section>
       
       
       <footer class="sticky-footer bg-white">
          <div class="container my-auto">
              <div class="copyright text-center my-auto">
-                 <span>Copyright &copy; NICOLGONZALEZ</span>
+                 <span>Copyright &copy; <a href="https://github.com/nicoUnsam82/DWNicoLGonzalez" target="_blank">NICOLGONZALEZ</a></span>
              </div>
          </div>
       </footer>
